@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif; /* Change this to your desired font */
+  font-size: 16px; /* Set your desired font size */
+  line-height: 1.5; /* Optional: set line height for better readability */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #333; /* Set a valid background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Set the color for body text to be transparent */
+body {
+  color: rgba(255, 255, 255, 0.7); /* White color with 70% opacity */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Optionally style headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Ensures headers use the same font */
+  color: #FFD700; /* Bright Yellow for contrast */
+  /* Alternatively, you can use any of the following colors:
+  color: #00FFFF; /* Cyan */
+  color: #FF7F50; /* Light Coral */
+  color: #32CD32; /* Lime Green */
+  color: #FF6347; /* Tomato */
+  
+}
+/* App.css */
+
+/* Add this rule to style all nav links consistently */
+.nav-link {
+  color: #FFD700; /* Bright Yellow for navigation links */
+}
+
+.nav-link:hover {
+  color: #ffffff; /* Change to white on hover for better visibility */
+}
+
+
+@media (max-width: 992px) {
+  .navbar {
+      padding: 10px 20px; /* Adjust padding for smaller screens */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .navbar-nav {
+      text-align: center; /* Center text on smaller screens */
   }
 }
